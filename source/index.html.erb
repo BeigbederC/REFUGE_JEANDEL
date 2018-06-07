@@ -1,15 +1,17 @@
 ---
-title: Le Wagon - Middleman
+title: Le Wagon - Middleman (home)
 ---
 
-<div id="home">
+<div id="home" style="background-image: url(<%= image_path 'pica.jpg'%>)">
   <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
+
+    <%= image_tag "logo-white.png", width: "260" %>
+    <h3>REFUGE JEANDEL</h3>
+    <h4>La  Pierre  Saint - Martin</h4>
+
+    <p class="bouton">
+      <%= link_to "DÉCOUVRIR", "about.html" %>
     </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+
   </div>
 </div>
