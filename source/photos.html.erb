@@ -1,27 +1,47 @@
-<div id="home">
+<div class="container">
 
-<div id="images-box">
-    <div class="holder">
-        <div id="image-1" class="image-lightbox">
-            <span class="close"><a href="#">X</a></span>
-            <img src="pica.jpg" alt="earth!">
-            <a class="expand" href="#image-1"></a>
+  <div class="photos">
+    <h3>GALLERIE PHOTOS</h3>
+  </div>
+
+    <div id="my_carousel" class="carousel slide" data-ride="carousel">
+    <!-- Bulles -->
+      <ol class="carousel-indicators">
+        <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#my_carousel" data-slide-to="1"></li>
+        <li data-target="#my_carousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Slides -->
+      <div class="carousel-inner">
+      <!-- Page 1 -->
+        <div class="item active">
+          <div class="carousel-page">
+            <img src="/images/refuge2.jpg" class="img-responsive img-rounded" style="margin:0px auto; max-height: calc(100vh - 140px); height: auto;"  />
+          </div>
+          <div class="carousel-caption">Voici le refuge au coeur de la Pierre Saint-Martin</div>
         </div>
-    </div>
-    <div class="holder">
-        <div id="image-2" class="image-lightbox">
-            <span class="close"><a href="#">X</a></span>
-            <img src="pica.jpg" alt="earth!">
-            <a class="expand" href="#image-2"></a>
+      <!-- Page 2 -->
+        <div class="item">
+          <div class="carousel-page">
+            <img src="/images/pica.jpg" class="img-responsive img-rounded" style="margin:0px auto; max-height: calc(100vh - 140px); height: auto;"  />
+          </div>
+          <div class="carousel-caption">Le Pic d'Anie l'hiver</div>
         </div>
-    </div>
-    <div class="holder">
-        <div id="image-3" class="image-lightbox">
-            <span class="close"><a href="#">X</a></span>
-            <img src="pica.jpg" alt="earth!">
-            <a class="expand" href="#image-3"></a>
+      <!-- Page 3 -->
+        <div class="item">
+          <div class="carousel-page">
+            <img src="/images/pic.JPG" class="img-responsive img-rounded" style="margin:0px auto; max-height: calc(100vh - 140px); height: auto;"  />
+          </div>
+          <div class="carousel-caption">Le Pic d'Anie l'été</div>
         </div>
+      <!-- Contrôles -->
+      <a class="left carousel-control" href="#my_carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#my_carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </div>
-</div>
+
 
 </div>
