@@ -7,12 +7,12 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   flex-direction: column;
   p {
     margin-top: 1.5em;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
   a {
     color: white;
@@ -32,6 +32,18 @@
     filter: alpha(opacity=90);
     letter-spacing: 1px;
   }
+}
+
+.contact-content {
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.contact-content:hover {
+  background-color: #303D4D;
+  opacity: 0.9;
 }
 
 
