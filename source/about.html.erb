@@ -2,40 +2,42 @@
 title: Le Wagon - Middleman - About (le refuge)
 ---
 
-<div id="home" style="background-image: url(<%= image_path 'pica.jpg'%>)">
-  <div class="container"></div>
-    <div class="home-content">
-      <%= image_tag "logo-white.png", width: "100" %>
-      <h3>Les lieux :</h3>
-      <p>Une salle à manger et un salon</p>
-      <p>Une chambre de 3 personnes, trois chambres de 4 personnes, et une mezzanine de 4 personnes</p>
-      <p>Deux sanitaires</p>
-      <p>Deux salles de bains</p>
-      <p>Une cuisine</p>
+
+<div id="about" style="background-image: url(<%= image_path 'refuge2.jpg'%>)">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-5 col-sm-offset-1">  <!-- col-sm-offset-3  col-xs-12 -->
+        <div class="opacity">
+        <!-- insert <div class="card"> -->
+          <h4>Les lieux :</h4>
+          <p>Une salle à manger et un salon</p>
+          <p>Une chambre de 3 personnes, trois chambres de 4 personnes, et une mezzanine de 4 personnes</p>
+          <p>Deux sanitaires</p>
+          <p>Deux salles de bains</p>
+          <p>Une cuisine</p>
+        </div>
+      </div>
+
+      <div class="col-sm-5 col-sm-offset-1">
+        <!-- insert <div class="card"> -->
+        <div class="opacity">
+          <h4>Pour les groupes d'hiver nous mettons à dispositions :</h4>
+          <p>Un micro onde</p>
+          <p>Deux frigos</p>
+          <p>Un congélateur</p>
+          <p>Deux fours</p>
+          <p>Plaques de cuissons</p>
+          <p>Un lave vaisselle professionnel</p>
+          <p>Et le nécessaire de cuisine</p>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </div>
-
-<div id="home" style="background-image: url(<%= image_path 'pica.jpg'%>)">
-  <div class="container"></div>
-    <div class="home-content">
-      <%= image_tag "logo-white.png", width: "100" %>
-      <h3>Pour les groupes d'hiver nous mettons à dispositions :</h3>
-      <p>Un micro onde</p>
-      <p>Deux frigos</p>
-      <p>Un congélateur</p>
-      <p>Deux fours</p>
-      <p>Plaques de cuissons</p>
-      <p>Un lave vaisselle professionnel</p>
-      <p>Et le nécessaire de cuisine</p>
-      <p class="bouton">
-        <%= link_to "Prestations et Tarifs", "prestations.html" %>
-      </p>
-    </div>
-  </div>
-</div>
-
-
 
 
 
