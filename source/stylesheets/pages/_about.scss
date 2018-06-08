@@ -1,4 +1,6 @@
-.opacity {
+
+
+.opacity3 {
   background-color: white;
   opacity: 0.5;
   padding: 20px;
@@ -15,6 +17,7 @@
   p {
     margin-top: 1.5em;
     letter-spacing: 3px;
+    font-size: 14px;
   }
   a {
     color: grey;
@@ -34,4 +37,10 @@
     filter: alpha(opacity=90);
     letter-spacing: 1px;
   }
+  h6 {
+    margin-top: 1.5em;
+    letter-spacing: 3px;
+    font-size: 13px;
+  }
 }
+
