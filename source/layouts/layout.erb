@@ -35,18 +35,33 @@
             </i>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
 
-            <li><a href="/">Français</a></li>
-            <li><a href="/en#{current_page.path}">English</a></li>
-            <li><a href="/es/">Espanol</a></li>
+            <li><a href="/"><%=image_tag "France.png", height: 30 %> Français </a></li>
+            <li><a href="/en/"><%=image_tag "UK.png", height: 30 %> English </a></li>
+            <li><a href="/es/"><%=image_tag "Spain.png", height: 30 %> Espanol </a></li>
           </ul>
         </div>
 
       <!-- Right Navigation -->
       <div class="navbar-wagon-right hidden-xs hidden-sm">
-        <%= link_to "LE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "PRESTATIONS/TARIFS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "GALLERIE PHOTOS", "/photos.html", class: "navbar-wagon-item navbar-wagon-link" %>
-        <%= link_to "CONTACT", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
+
+        <% if I18n.locale == I18n.default_locale %>
+          <%= link_to "LE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "PRESTATIONS/TARIFS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "GALLERIE PHOTOS", "/photos.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "CONTACT", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <% elsif I18n.locale == :en %>
+          <%= link_to "THE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "SERVICES/PRICES", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "PHOTO GALLERY", "/photos.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "CONTACT", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <% else %>
+          <%= link_to "EL REFUGIO", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "PRESTACIONES Y TARIFAS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "GALERIA FOTO", "/photos.html", class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "CONTACTO", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
+        <% end %>
+
+
 
 
         <!-- Profile picture with dropdown list -->
