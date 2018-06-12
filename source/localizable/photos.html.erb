@@ -3,7 +3,7 @@
   <div class="container">
 
     <div class="photos">
-      <% if I18n.locale == :fr %>
+      <% if I18n.locale == :fr %>  <!-- == I18n.default_locale (pour page d'acceuil = rien)-->
         <h3>GALLERIE PHOTOS</h3>
       <% elsif I18n.locale == :en %>
         <h3>PHOTO GALLERY</h3>
