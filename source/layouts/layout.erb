@@ -34,23 +34,31 @@
 
 
 <!-- drapeaux -->
-        <div class="dropdown">
-          <i class="dropdown-toggle navbar-wagon-item" data-toggle="dropdown">
-          <% if I18n.locale == :fr %>
-            <%=image_tag "France.png", height: 30 %>
-          <% elsif I18n.locale == :en %>
-            <%=image_tag "UK.png", height: 30 %>
-          <% else %>
-            <%=image_tag "Spain.png", height: 30 %>
-          <% end %>
-            </i>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-
-            <li> <%= link_to (image_tag "France.png", height: 30), "/fr/#{current_page.path.split('/').last}" %> Français</li>
-            <li><%= link_to (image_tag "UK.png", height: 30), "/en/#{current_page.path.split('/').last}" %>English</li>
-            <li><%= link_to (image_tag "Spain.png", height: 30), "/es/#{current_page.path.split('/').last}" %>Castellano</li>
-          </ul>
-        </div>
+      <div class="dropdown">
+        <i class="dropdown-toggle navbar-wagon-item" data-toggle="dropdown">
+        <% if I18n.locale == :fr %>
+          <%=image_tag "France.png", height: 30 %>
+        <% elsif I18n.locale == :en %>
+          <%=image_tag "UK.png", height: 30 %>
+        <% else %>
+          <%=image_tag "Spain.png", height: 30 %>
+        <% end %>
+          </i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li class="drapeaux">
+            <%= link_to (image_tag "France.png", height: 30), "/fr/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "Français", "/fr/#{current_page.path.split('/').last}" %> </div>
+          </li>
+          <li class="drapeaux">
+            <%= link_to (image_tag "UK.png", height: 30), "/en/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "English", "/en/#{current_page.path.split('/').last}" %> </div>
+          </li>
+          <li class="drapeaux">
+            <%= link_to (image_tag "Spain.png", height: 30), "/es/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "Castellano", "/es/#{current_page.path.split('/').last}" %> </div>
+          </li>
+        </ul>
+      </div>
 
       <!-- Right Navigation -->
       <div class="navbar-wagon-right hidden-xs hidden-sm">
