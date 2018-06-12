@@ -19,10 +19,10 @@ fr:
   necessaire: "Et le nécessaire de cuisine"
   tarifs_ete: "Tarifs été"
   mai: "(mi mai à mi octobre) :"
-  repas: "Repas du soir | 14€"
+  repas: "Repas du soir | 15€"
   nuit: "Nuitée | 15€"
   petit: "Petit-déjeuné | 6€"
-  demi: "Demi-pension | 35€"
+  demi: "Demi-pension | 36€"
   nous_avons: "Nous avons également à disposition une alimentation de vivres de courses comprenant tout le nécessaire du randonneur."
   nous_proposons: "Nous proposons aussi des piques-niques à emporter et du snack à toutes heures."
   tarifs_hiver: "Tarifs hiver"
@@ -30,4 +30,5 @@ fr:
   location: "Location du refuge dans sa totalité en gestion libre pour les groupes allant jusqu'à 19 personnes, à la semaine ou au week-end. Tarif variable en fonction de la durée et de la période du séjour."
   mode: "Mode de paiement:"
   cheque: "Chèque / Espèce"
+
 

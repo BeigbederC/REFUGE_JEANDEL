@@ -19,10 +19,10 @@ es:
   necessaire: "Y todo le necesario para cocinar"
   tarifs_ete: "Tarifas de verano "
   mai: "( Desde mediados de mayo a mediados de octubre):"
-  repas: "Cena | 14€"
+  repas: "Cena | 15€"
   nuit: "Noche | 15€"
   petit: "Desayuno | 6€"
-  demi: "Media pensión | 35€"
+  demi: "Media pensión | 36€"
   nous_avons: "Tenemos también a su disposición lo necesario para una buena alimentación del senderista."
   nous_proposons: "Os proponemos también picnic para llevar y snacks todo el día."
   tarifs_hiver: "Tarifa de invierno "
@@ -30,3 +30,4 @@ es:
   location: "Alquilar del refugio entero con gestión libre para grupos hasta 19 personas, para una semana o un fin de semana. Tarifa variable, depende de la duración y del periodo de la permanencia."
   mode: "Forma de pago: "
   cheque: "efectivo / cheque"
+
