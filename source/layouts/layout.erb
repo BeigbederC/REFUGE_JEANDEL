@@ -18,14 +18,25 @@
 
 
       <!-- Logo -->
-      <a href="/" class="navbar-wagon-brand">
+    <% if I18n.locale == :fr %>
+      <a href="/fr" class="navbar-wagon-brand">
         <%=image_tag "logo.png", height: 30 %>
       </a>
+    <% elsif I18n.locale == :en %>
+      <a href="/en" class="navbar-wagon-brand">
+        <%=image_tag "logo.png", height: 30 %>
+      </a>
+    <% else %>
+      <a href="/es" class="navbar-wagon-brand">
+        <%=image_tag "logo.png", height: 30 %>
+      </a>
+    <% end %>
+
 
 <!-- drapeaux -->
         <div class="dropdown">
           <i class="dropdown-toggle navbar-wagon-item" data-toggle="dropdown">
-          <% if I18n.locale == I18n.default_locale %>
+          <% if I18n.locale == :fr %>
             <%=image_tag "France.png", height: 30 %>
           <% elsif I18n.locale == :en %>
             <%=image_tag "UK.png", height: 30 %>
@@ -35,16 +46,16 @@
             </i>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
 
-            <li><a href="/"><%=image_tag "France.png", height: 30 %> Français </a></li>
-            <li><a href="/en/"><%=image_tag "UK.png", height: 30 %> English </a></li>
-            <li><a href="/es/"><%=image_tag "Spain.png", height: 30 %> Espanol </a></li>
+            <li> <%= link_to (image_tag "France.png", height: 30), "/fr/#{current_page.path.split('/').last}" %> Français</li>
+            <li><%= link_to (image_tag "UK.png", height: 30), "/en/#{current_page.path.split('/').last}" %>English</li>
+            <li><%= link_to (image_tag "Spain.png", height: 30), "/es/#{current_page.path.split('/').last}" %>Castellano</li>
           </ul>
         </div>
 
       <!-- Right Navigation -->
       <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-        <% if I18n.locale == I18n.default_locale %>
+        <% if I18n.locale == :fr %>
           <%= link_to "LE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "PRESTATIONS/TARIFS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "GALLERIE PHOTOS", "/photos.html", class: "navbar-wagon-item navbar-wagon-link" %>
