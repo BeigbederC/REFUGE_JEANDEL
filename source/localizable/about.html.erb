@@ -32,12 +32,27 @@ title: Le Wagon - Middleman - About (le refuge)
 
       <div class="col-sm-6 col-xs-12">  <!-- col-sm-offset-3  col-xs-12 -->
         <div class="opacity3">
-          <h5><%= t('les_lieux') %></h5>
-          <h6><%= t('salle') %></h6>
-          <h6><%= t('chambre') %></p>
-          <h6><%= t('sanitaires') %></h6>
-          <h6><%= t('bains') %></h6>
-          <h6><%= t('cuisine') %></h6>
+
+          <h5>
+            <%= t('les_lieux') %>
+          </h5>
+
+          <h6>
+            <%= t('salle') %> <a href="" data-toggle="modal" data-target="#modalSalon"><i class="fa fa-eye"></i></a>
+          </h6>
+
+          <h6><%= t('chambre3') %> (<a href="" data-toggle="modal" data-target="#modalChambre3"><i class="fa fa-eye"></i></a>), <%= t('chambre4') %> (<a href="" data-toggle="modal" data-target="#modalChambre4"><i class="fa fa-eye"></i></a>), <%= t('mezza') %> (<a href="" data-toggle="modal" data-target="#modalMezza"><i class="fa fa-eye"></i></a>)</p>
+
+          <h6><%= t('sanitaires') %>  </h6>
+
+          <h6>
+            <%= t('bains') %> <a href="" data-toggle="modal" data-target="#modalSdb"><i class="fa fa-eye"></i></a>
+          </h6>
+
+          <h6>
+            <%= t('cuisine') %> <a href="" data-toggle="modal" data-target="#modalCuisine"><i class="fa fa-eye"></i></a>
+          </h6>
+
           <h6></h6>
           <hr>
           <h5><%= t('groupes') %></h5>
@@ -53,5 +68,79 @@ title: Le Wagon - Middleman - About (le refuge)
 
     </div>
 </div>
+
+
+
+<!-- modales -->
+
+<!-- salon -->
+<div class="modal fade" id="modalSalon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        modal salon
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- chambre3 -->
+<div class="modal fade" id="modalChambre3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        modal chambre 3
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- chambre4 -->
+<div class="modal fade" id="modalChambre4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        modal chambre 4
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mezza -->
+<div class="modal fade" id="modalMezza" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        modal mezza
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sdb -->
+<div class="modal fade" id="modalSdb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        modal sdb
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- cuisine -->
+<div class="modal fade" id="modalCuisine" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        modal cusine
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
