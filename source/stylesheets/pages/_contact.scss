@@ -12,7 +12,7 @@
   flex-direction: column;
   text-shadow: 0.3px 0.3px #303D4D;
   p {
-    margin-top: 1.5em;
+    margin-top: 1em;
     letter-spacing: 2px;
   }
   a {
@@ -20,9 +20,15 @@
     font-size: 16px;
     text-decoration: none;
   }
+  a:hover {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  }
   img {
     opacity: 0.8;
     filter: alpha(opacity=80);
+    margin-top: 70px;
   }
   h3 {
     opacity: 0.9;
@@ -46,6 +52,20 @@
   background-color: #303D4D;
   opacity: 0.9;
   transition: all 0.4s ease-out;
+}
+
+.boite {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.wtf:hover {
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  background-position: 0 1.09em;
+  background-repeat: repeat-x;
+  background-size: 4px 2px;
 }
 
 
@@ -113,3 +133,5 @@ body { background-color: #eee; }
 .footer-social-links a:hover:before{
     background: #303D4D;
 }
+
+
