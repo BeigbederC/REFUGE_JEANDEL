@@ -11,7 +11,21 @@ title: Le Wagon - Middleman - About (le refuge)
         <!-- insert <div class="card"> -->
         <div class="opacity3">
           <p> <%= t('le_refuge') %> </p>
-          <p> <%= t('il_est') %> </p>
+<!-- lien lapiaz -->
+            <% if I18n.locale == :fr %>
+              <p> <%= t('il_est') %>
+  "<a href="https://fr.wikipedia.org/wiki/Lapiaz" class="wtf2" target="_blank">lapiaz</a>"
+               <%= t('il_est_bis') %> <p>
+            <% elsif I18n.locale == :en %>
+              <p> <%= t('il_est') %>
+  "<a href="https://en.wikipedia.org/wiki/Limestone_pavement" class="wtf2" target="_blank">lapiaz</a>"
+               <%= t('il_est_bis') %> <p>
+            <% else %>
+              <p> <%= t('il_est') %>
+  "<a href="https://es.wikipedia.org/wiki/Lapiaz" class="wtf2" target="_blank">lapiaz</a>"
+               <%= t('il_est_bis') %> <p>
+            <% end %>
+
           <p> <%= t('il_est2') %> </p>
         </div>
       </div>
