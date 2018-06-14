@@ -53,7 +53,7 @@
     <% end %>
 
 <!-- drapeaux -->
-      <div class="dropdown">
+<!--       <div class="dropdown">
         <i class="dropdown-toggle navbar-wagon-item" data-toggle="dropdown">
         <% if I18n.locale == :fr %>
           <div class="drap3"><%=image_tag "France.png", height: 30 %> </div>
@@ -75,6 +75,33 @@
           <li class="drapeaux">
             <%= link_to (image_tag "Spain.png", height: 30), "/es/#{current_page.path.split('/').last}" %>
             <div class="drap2"> <%= link_to "Castellano", "/es/#{current_page.path.split('/').last}" %> </div>
+          </li>
+        </ul>
+      </div> -->
+
+
+      <div class="dropdown">
+        <i class="dropdown-toggle navbar-wagon-item" data-toggle="dropdown">
+        <% if I18n.locale == :fr %>
+          <div class="drap3"><%=image_tag "France.png", height: 30 %> </div>
+        <% elsif I18n.locale == :en %>
+          <div class="drap3"><%=image_tag "UK.png", height: 30 %> </div>
+        <% else %>
+          <div class="drap3"><%=image_tag "Spain.png", height: 30 %> </div>
+        <% end %>
+          </i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li class="drapeaux">
+            <%= link_to (image_tag "France.png", height: 30), "/REFUGE_JEANDEL/fr/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "Français", "/REFUGE_JEANDEL/fr/#{current_page.path.split('/').last}" %> </div>
+          </li>
+          <li class="drapeaux">
+            <%= link_to (image_tag "UK.png", height: 30), "/REFUGE_JEANDEL/en/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "English", "/REFUGE_JEANDEL/en/#{current_page.path.split('/').last}" %> </div>
+          </li>
+          <li class="drapeaux">
+            <%= link_to (image_tag "Spain.png", height: 30), "/REFUGE_JEANDEL/es/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "Castellano", "/REFUGE_JEANDEL/es/#{current_page.path.split('/').last}" %> </div>
           </li>
         </ul>
       </div>
