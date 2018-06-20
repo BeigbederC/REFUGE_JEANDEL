@@ -52,15 +52,15 @@
     <div class="navbar-wagon">
       <!-- Logo -->
     <% if I18n.locale == :fr %>
-      <a href="/REFUGE_JEANDEL/fr" class="navbar-wagon-brand">
+      <a href="/fr" class="navbar-wagon-brand">
         <%=image_tag "logo-white.png", height: 30 %>
       </a>
     <% elsif I18n.locale == :en %>
-      <a href="/REFUGE_JEANDEL/en" class="navbar-wagon-brand">
+      <a href="/en" class="navbar-wagon-brand">
         <%=image_tag "logo-white.png", height: 30 %>
       </a>
     <% else %>
-      <a href="/REFUGE_JEANDEL/es" class="navbar-wagon-brand">
+      <a href="/es" class="navbar-wagon-brand">
         <%=image_tag "logo-white.png", height: 30 %>
       </a>
     <% end %>
@@ -105,16 +105,16 @@
           </i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li class="drapeaux">
-            <%= link_to (image_tag "France.png", height: 30), "/REFUGE_JEANDEL/fr/#{current_page.path.split('/').last}" %>
-            <div class="drap2"> <%= link_to "Français", "/REFUGE_JEANDEL/fr/#{current_page.path.split('/').last}" %> </div>
+            <%= link_to (image_tag "France.png", height: 30), "/fr/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "Français", "/fr/#{current_page.path.split('/').last}" %> </div>
           </li>
           <li class="drapeaux">
-            <%= link_to (image_tag "UK.png", height: 30), "/REFUGE_JEANDEL/en/#{current_page.path.split('/').last}" %>
-            <div class="drap2"> <%= link_to "English", "/REFUGE_JEANDEL/en/#{current_page.path.split('/').last}" %> </div>
+            <%= link_to (image_tag "UK.png", height: 30), "/en/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "English", "/en/#{current_page.path.split('/').last}" %> </div>
           </li>
           <li class="drapeaux">
-            <%= link_to (image_tag "Spain.png", height: 30), "/REFUGE_JEANDEL/es/#{current_page.path.split('/').last}" %>
-            <div class="drap2"> <%= link_to "Castellano", "/REFUGE_JEANDEL/es/#{current_page.path.split('/').last}" %> </div>
+            <%= link_to (image_tag "Spain.png", height: 30), "/es/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "Castellano", "/es/#{current_page.path.split('/').last}" %> </div>
           </li>
         </ul>
       </div>
