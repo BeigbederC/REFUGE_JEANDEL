@@ -6,8 +6,8 @@ end
 
 activate :sprockets
 
-activate :i18n, :mount_at_root => false
-#activate :i18n, :mount_at_root => :fr
+# activate :i18n, :mount_at_root => false
+activate :i18n, :mount_at_root => :fr
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
