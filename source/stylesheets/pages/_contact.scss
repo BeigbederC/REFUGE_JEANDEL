@@ -62,11 +62,18 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.wtf:hover {
+.wtf {
   background-image: linear-gradient(to right, white 50%, transparent 50%);
   background-position: 0 1.09em;
   background-repeat: repeat-x;
   background-size: 4px 2px;
+}
+
+.wtf:hover {
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  background-position: 0 1.09em;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
 }
 
 
