@@ -51,15 +51,15 @@
 
     <div class="navbar-wagon">
       <!-- Logo -->
-    <% if I18n.locale == :fr %>
-      <a href="/refugejeandel/fr" class="navbar-wagon-brand">
+    <% if I18n.locale == I18n.default_locale %>
+      <a href="/refugejeandel/" class="navbar-wagon-brand">
         <%=image_tag "logo-white.png", height: 30 %>
       </a>
     <% elsif I18n.locale == :en %>
       <a href="/refugejeandel/en" class="navbar-wagon-brand">
         <%=image_tag "logo-white.png", height: 30 %>
       </a>
-    <% else %>
+    <% elsif I18n.locale == :es %>
       <a href="/refugejeandel/es" class="navbar-wagon-brand">
         <%=image_tag "logo-white.png", height: 30 %>
       </a>
@@ -95,18 +95,18 @@
 
       <div class="dropdown">
         <i class="dropdown-toggle navbar-wagon-item" data-toggle="dropdown">
-        <% if I18n.locale == :fr %>
+        <% if I18n.locale == I18n.default_locale %>
           <div class="drap3"><%=image_tag "France.png", height: 30 %> </div>
         <% elsif I18n.locale == :en %>
           <div class="drap3"><%=image_tag "UK.png", height: 30 %> </div>
-        <% else %>
+        <% elsif I18n.locale == :es %>
           <div class="drap3"><%=image_tag "Spain.png", height: 30 %> </div>
         <% end %>
           </i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li class="drapeaux">
-            <%= link_to (image_tag "France.png", height: 30), "/refugejeandel/fr/#{current_page.path.split('/').last}" %>
-            <div class="drap2"> <%= link_to "Français", "/refugejeandel/fr/#{current_page.path.split('/').last}" %> </div>
+            <%= link_to (image_tag "France.png", height: 30), "/refugejeandel/#{current_page.path.split('/').last}" %>
+            <div class="drap2"> <%= link_to "Français", "/refugejeandel/#{current_page.path.split('/').last}" %> </div>
           </li>
           <li class="drapeaux">
             <%= link_to (image_tag "UK.png", height: 30), "/refugejeandel/en/#{current_page.path.split('/').last}" %>
@@ -122,7 +122,7 @@
       <!-- Right Navigation -->
       <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-        <% if I18n.locale == :fr %>
+        <% if I18n.locale == I18n.default_locale %>
           <%= link_to "LE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "PRESTATIONS/TARIFS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "CONTACT", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
@@ -130,7 +130,7 @@
           <%= link_to "THE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "SERVICES/PRICES", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "CONTACT", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
-        <% else %>
+        <% elsif I18n.locale == :es %>
           <%= link_to "EL REFUGIO", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "PRESTACIONES Y TARIFAS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "CONTACTO", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
@@ -147,7 +147,7 @@
         <div class="dropdown">
           <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <% if I18n.locale == :fr %>
+            <% if I18n.locale == I18n.default_locale %>
               <%= link_to "LE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
               <%= link_to "PRESTATIONS/TARIFS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
               <%= link_to "CONTACT", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
@@ -155,7 +155,7 @@
               <%= link_to "THE REFUGE", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
               <%= link_to "SERVICES/PRICES", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
               <%= link_to "CONTACT", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
-            <% else %>
+            <% elsif I18n.locale == :es %>
               <%= link_to "EL REFUGIO", "/about.html", class: "navbar-wagon-item navbar-wagon-link" %>
               <%= link_to "PRESTACIONES/TARIFAS", "/prestations.html", class: "navbar-wagon-item navbar-wagon-link" %>
               <%= link_to "CONTACTO", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
